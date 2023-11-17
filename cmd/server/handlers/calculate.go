@@ -13,6 +13,11 @@ type CalculateHander struct {
 	WebResponder WebResponder
 }
 
+// @Param   flightSegments	body	[][]string	true	"Flight segments"
+// @Success 200 {object} []string
+// @Failure 400 {object} map[string]interface{} "Bad Request Error"
+// @Failure 500 {object} map[string]interface{}	"Internal Server Error"
+// @Router /calculate [post]
 func (h RootHandler) FlightCalculate(w http.ResponseWriter, r *http.Request) {
 
 	var flights []models.Flight
