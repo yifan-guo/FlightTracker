@@ -7,6 +7,13 @@ Service used to calcualte the start and final destinations for customers
 ## Format
 The service listens on port 8080 for incoming requests and exposes a POST endpoint called `/calculate`
 
+Request and Response formats can be found on the swagger docs by going `locahost:1323/swagger` to once the application is run.
+
+### Swagger Docs
+![Swagger Docs.png](resources%2Fscreenshots%2FSwagger%20Docs.png)
+
+
+### Payload Format
 Request URL: 
 `http://localhost:8080/calculate`
 
@@ -56,8 +63,9 @@ Response Body (For above input)
 	"EWR"
 ]
 ```
+## Sucessful Rest Client Call
+![REST Client Call.png](resources%2Fscreenshots%2FREST%20Client%20Call.png)
 
-![Screenshot 2023-11-17 at 11.24.45 AM.png](..%2F..%2FDesktop%2FScreenshot%202023-11-17%20at%2011.24.45%20AM.png)
 
 
 ## Optimizations (Future Enhancements)
